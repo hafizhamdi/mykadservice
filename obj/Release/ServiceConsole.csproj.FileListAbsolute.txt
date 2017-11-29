@@ -1,0 +1,11 @@
+C:\Users\hafizhamdi\source\repos\SmartCardService\ServiceConsole\bin\Release\ServiceConsole.exe.config
+C:\Users\hafizhamdi\source\repos\SmartCardService\ServiceConsole\bin\Release\ServiceConsole.exe
+C:\Users\hafizhamdi\source\repos\SmartCardService\ServiceConsole\bin\Release\ServiceConsole.pdb
+C:\Users\hafizhamdi\source\repos\SmartCardService\ServiceConsole\bin\Release\Newtonsoft.Json.dll
+C:\Users\hafizhamdi\source\repos\SmartCardService\ServiceConsole\bin\Release\pcsc-sharp.dll
+C:\Users\hafizhamdi\source\repos\SmartCardService\ServiceConsole\bin\Release\Newtonsoft.Json.xml
+C:\Users\hafizhamdi\source\repos\SmartCardService\ServiceConsole\bin\Release\pcsc-sharp.xml
+C:\Users\hafizhamdi\source\repos\SmartCardService\ServiceConsole\bin\Release\pcsc-sharp.dll.config
+C:\Users\hafizhamdi\source\repos\SmartCardService\ServiceConsole\obj\Release\ServiceConsole.csproj.CoreCompileInputs.cache
+C:\Users\hafizhamdi\source\repos\SmartCardService\ServiceConsole\obj\Release\ServiceConsole.exe
+C:\Users\hafizhamdi\source\repos\SmartCardService\ServiceConsole\obj\Release\ServiceConsole.pdb
