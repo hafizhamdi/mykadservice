@@ -13,6 +13,16 @@ using System.ServiceProcess;
 using System.Configuration;
 using System.Configuration.Install;
 
+
+/*  Author: hafizh
+ *  Date: 13 Dec 2017
+ * 
+ *  Windows Service:
+ *  i  - ver 1.0 : Handle Mykad
+ *  ii - ver 2.0 : Handle Mykid
+ *  
+ *  
+     */
 namespace ServiceConsole
 {
     [ServiceContract]
@@ -27,6 +37,11 @@ namespace ServiceConsole
         [WebGet(ResponseFormat = WebMessageFormat.Json,
            RequestFormat = WebMessageFormat.Json), CorsEnabled]
         string readmykad();
+
+        [OperationContract]
+        [WebGet(ResponseFormat = WebMessageFormat.Json,
+           RequestFormat = WebMessageFormat.Json), CorsEnabled]
+        string readmykid();
     }
 
     public class Service : IService
@@ -40,7 +55,7 @@ namespace ServiceConsole
         {
             MyKad.Init();
             MyKad.SelectJPN();
-            MyKad.ReadInfo();
+            MyKad.ReadInfoMyKad();
             MyKad.Flush();
 
             Person person = new Person();
@@ -68,13 +83,43 @@ namespace ServiceConsole
             return sPerson;
         }
 
+        public string readmykid()
+        {
+            MyKad.Init();
+            MyKad.SelectJPN();
+            MyKad.ReadInfoMyKid();
+            MyKad.Flush();
+
+            Person person = new Person();
+
+            person.name = MyKad.name.Trim(' ');
+            person.icno = MyKad.icno.Trim(' ');
+            person.regno = MyKad.regno.Trim(' ');
+            person.dob = MyKad.dob.Trim(' ');
+            person.tob = MyKad.tob.Trim(' ');
+            person.pob = MyKad.pob.Trim(' ');
+            person.gender = MyKad.gender.Trim(' ');
+            person.religion = MyKad.religion.Trim(' ');
+            person.citizenship = MyKad.citizenship.Trim(' ');
+            person.addr1 = MyKad.addr1.Trim(' ');
+            person.addr2 = MyKad.addr2.Trim(' ');
+            person.addr3 = MyKad.addr3.Trim(' ');
+            person.city = MyKad.city.Trim(' ');
+            person.poscode = MyKad.poscode.Trim(' ');
+            person.state = MyKad.state.Trim(' ');
+
+            string sPerson = JsonConvert.SerializeObject(person);
+
+            return sPerson;
+        }
+
         public class WindowsService : ServiceBase
         {
             public ServiceHost serviceHost = null;
             public WindowsService()
             {
                 // Name the Windows Service
-                ServiceName = "WCFWindowsServiceSample";
+                ServiceName = "WindowsService";
             }
 
             public static void Main()
@@ -111,7 +156,6 @@ namespace ServiceConsole
                         Console.WriteLine("This can also be accomplished by navigating to");
                         Console.WriteLine("http://localhost:8000/Hello");
                         Console.WriteLine("in a web browser while this service is running.");
-                        //Console.WriteLine("http://localhost:8000/EchoWithGet?s=Hello, world!");
                         Console.WriteLine("");
                     }
                     
@@ -141,8 +185,10 @@ namespace ServiceConsole
         public string origname;
         public string gpcname;
         public string icno;
-        public string dob;
-        public string pob;
+        public string regno;
+        public string dob; //date
+        public string tob; //time
+        public string pob; //place
         public string gender;
         public string citizenship;
         public string religion;

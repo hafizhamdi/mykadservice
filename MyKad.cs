@@ -16,10 +16,12 @@ namespace ServiceConsole
         private static IntPtr m_pioSendPci;
 
         public static string name;
+        public static string regno;
         public static string origname;
         public static string gpcname;
         public static string icno;
         public static string dob;
+        public static string tob;
         public static string pob;
         public static string gender;
         public static string citizenship;
@@ -400,7 +402,7 @@ namespace ServiceConsole
             }
         }
 
-        public static void ReadInfo()
+        public static void ReadInfoMyKad()
         {
             try
             {
@@ -429,6 +431,45 @@ namespace ServiceConsole
                     city = GetFld(APCOM.CITY, JPN4);
                     state = GetFld(APCOM.STATE, JPN4);
                     photo = GetPhoto();
+                }
+            }
+            catch (PCSCException ex)
+            {
+                Console.WriteLine("Ouch: "
+                    + ex.Message
+                    + " (" + ex.SCardError.ToString() + ")");
+            }
+        }
+
+        public static void ReadInfoMyKid()
+        {
+            try
+            {
+                if (m_hcontext != null)
+                {
+                    Console.WriteLine("Retrieving info started ...");
+                    string JPN1 = APCOM.JPN[0];
+                    string JPN2 = APCOM.JPN[1];
+
+                    //Page JPN-1-1
+                    name = GetFld(APMYKID.NAME, JPN1);
+                    regno = GetFld(APMYKID.REG_NUMBER, JPN1);
+                    icno = GetFld(APMYKID.IC_NUMBER, JPN1);
+                    gender = GetFld(APMYKID.GENDER, JPN1);
+                    citizenship = GetFld(APMYKID.CITIZENSHIP, JPN1);
+                    religion = GetFld(APMYKID.RELIGION, JPN1);
+
+                    addr1 = GetFld(APMYKID.ADDRESS_1, JPN1);
+                    addr2 = GetFld(APMYKID.ADDRESS_2, JPN1);
+                    addr3 = GetFld(APMYKID.ADDRESS_3, JPN1);
+                    poscode = GetFldNot(APMYKID.POSTCODE, JPN1, 5);
+                    city = GetFld(APMYKID.CITY, JPN1);
+                    state = GetFld(APMYKID.STATE, JPN1);
+
+                    //Page JPN-1-2
+                    pob = GetFld(APMYKID.BIRTH_PLACE, JPN2);
+                    dob = GetFldNot(APMYKID.DOB, JPN2, 8);
+                    tob = GetFldNot(APMYKID.TOB, JPN2, 6);
                 }
             }
             catch (PCSCException ex)
@@ -486,5 +527,29 @@ namespace ServiceConsole
 
         public static string[] JPN = { "01 00 01 00", "02 00 01 00", "03 00 01 00",
                                       "04 00 01 00", "05 00 01 00", "06 00 01 00"};
+    }
+
+    class APMYKID
+    {
+
+        //JPN-1
+        public static string[] REG_NUMBER = { "0F", "03 00" };
+        public static string[] NAME = { "96", "1E 00" };
+        public static string[] IC_NUMBER = { "0C", "12 00" };
+        public static string[] GENDER = { "01", "B4 00" };
+        public static string[] CITIZENSHIP = { "11", "B5 00" };
+        //public static string[] STATE = { "1E", "C6 00" };
+        public static string[] ADDRESS_1 = { "1B", "E4 00" };
+        public static string[] ADDRESS_2 = { "1E", "02 01" };
+        public static string[] ADDRESS_3 = { "1E", "20 01" };
+        public static string[] POSTCODE = { "03", "3E 01" };
+        public static string[] CITY = { "1E", "41 01" };
+        public static string[] STATE = { "1E", "5F 01" };
+        public static string[] RELIGION = { "0E", "7D 01" };
+
+        //JPN-2
+        public static string[] DOB = { "04", "03 00" };
+        public static string[] TOB = { "03", "07 00" };
+        public static string[] BIRTH_PLACE = { "51", "0A 00" };
     }
 }
