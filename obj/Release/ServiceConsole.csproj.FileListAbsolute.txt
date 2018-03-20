@@ -9,3 +9,13 @@ C:\Users\hafizhamdi\source\repos\SmartCardService\ServiceConsole\bin\Release\pcs
 C:\Users\hafizhamdi\source\repos\SmartCardService\ServiceConsole\obj\Release\ServiceConsole.csproj.CoreCompileInputs.cache
 C:\Users\hafizhamdi\source\repos\SmartCardService\ServiceConsole\obj\Release\ServiceConsole.exe
 C:\Users\hafizhamdi\source\repos\SmartCardService\ServiceConsole\obj\Release\ServiceConsole.pdb
+E:\github\mykadservice\bin\Release\ServiceConsole.exe.config
+E:\github\mykadservice\bin\Release\ServiceConsole.exe
+E:\github\mykadservice\bin\Release\ServiceConsole.pdb
+E:\github\mykadservice\bin\Release\Newtonsoft.Json.xml
+E:\github\mykadservice\bin\Release\pcsc-sharp.xml
+E:\github\mykadservice\bin\Release\pcsc-sharp.dll.config
+E:\github\mykadservice\obj\Release\ServiceConsole.csprojResolveAssemblyReference.cache
+E:\github\mykadservice\obj\Release\ServiceConsole.csproj.CoreCompileInputs.cache
+E:\github\mykadservice\obj\Release\ServiceConsole.exe
+E:\github\mykadservice\obj\Release\ServiceConsole.pdb

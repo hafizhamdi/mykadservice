@@ -1,0 +1,1806 @@
+﻿Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source MykadWinService.
+Service MykadWinService is being removed from the system...
+Service MykadWinService was successfully removed from the system.
+Attempt to stop service MykadWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service MykadWinService...
+Service MykadWinService has been successfully installed.
+Creating EventLog source MykadWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source MykadWinService.
+Service MykadWinService is being removed from the system...
+Service MykadWinService was successfully removed from the system.
+Attempt to stop service MykadWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service MykadWinService...
+Service MykadWinService has been successfully installed.
+Creating EventLog source MykadWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source MykadWinService.
+Service MykadWinService is being removed from the system...
+Service MykadWinService was successfully removed from the system.
+Attempt to stop service MykadWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service MykadWinService...
+Service MykadWinService has been successfully installed.
+Creating EventLog source MykadWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source MykadWinService.
+Service MykadWinService is being removed from the system...
+Service MykadWinService was successfully removed from the system.
+Attempt to stop service MykadWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service MykadWinService...
+Service MykadWinService has been successfully installed.
+Creating EventLog source MykadWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source MykadWinService.
+An exception occurred during the uninstallation of the System.Diagnostics.EventLogInstaller installer.
+System.Security.SecurityException: Requested registry access is not allowed.
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Warning: The source HTPWinService is not registered on the local machine.
+Service HTPWinService is being removed from the system...
+An exception occurred during the uninstallation of the System.ServiceProcess.ServiceInstaller installer.
+System.ComponentModel.Win32Exception: The specified service does not exist as an installed service
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Warning: The source HTPWinService is not registered on the local machine.
+Service HTPWinService is being removed from the system...
+An exception occurred during the uninstallation of the System.ServiceProcess.ServiceInstaller installer.
+System.ComponentModel.Win32Exception: The specified service does not exist as an installed service
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Warning: The source HTPWinService is not registered on the local machine.
+Service HTPWinService is being removed from the system...
+An exception occurred during the uninstallation of the System.ServiceProcess.ServiceInstaller installer.
+System.ComponentModel.Win32Exception: The specified service does not exist as an installed service
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Warning: The source HTPWinService is not registered on the local machine.
+Service HTPWinService is being removed from the system...
+An exception occurred during the uninstallation of the System.ServiceProcess.ServiceInstaller installer.
+System.ComponentModel.Win32Exception: The specified service does not exist as an installed service
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+An exception occurred during the uninstallation of the System.Diagnostics.EventLogInstaller installer.
+System.Security.SecurityException: Requested registry access is not allowed.
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Warning: The source HTPWinService is not registered on the local machine.
+Service HTPWinService is being removed from the system...
+An exception occurred during the uninstallation of the System.ServiceProcess.ServiceInstaller installer.
+System.ComponentModel.Win32Exception: The specified service does not exist as an installed service
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Warning: The source HTPWinService is not registered on the local machine.
+Service HTPWinService is being removed from the system...
+An exception occurred during the uninstallation of the System.ServiceProcess.ServiceInstaller installer.
+System.ComponentModel.Win32Exception: The specified service does not exist as an installed service
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Installing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Installing service HTPWinService...
+Service HTPWinService has been successfully installed.
+Creating EventLog source HTPWinService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Service HTPWinService is being removed from the system...
+Service HTPWinService was successfully removed from the system.
+Attempt to stop service HTPWinService.
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Warning: The source HTPWinService is not registered on the local machine.
+Service HTPWinService is being removed from the system...
+An exception occurred during the uninstallation of the System.ServiceProcess.ServiceInstaller installer.
+System.ComponentModel.Win32Exception: The specified service does not exist as an installed service
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+Uninstalling assembly 'E:\github\mykadservice\bin\Debug\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Debug\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Debug\ServiceConsole.exe
+Removing EventLog source HTPWinService.
+Warning: The source HTPWinService is not registered on the local machine.
+Service HTPWinService is being removed from the system...
+An exception occurred during the uninstallation of the System.ServiceProcess.ServiceInstaller installer.
+System.ComponentModel.Win32Exception: The specified service does not exist as an installed service
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.

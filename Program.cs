@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.ServiceModel;
 using System.ServiceModel.Description;
 using System.ServiceModel.Web;
@@ -10,7 +6,6 @@ using Newtonsoft.Json;
 
 using System.ComponentModel;
 using System.ServiceProcess;
-using System.Configuration;
 using System.Configuration.Install;
 
 
@@ -18,13 +13,18 @@ using System.Configuration.Install;
  *  Date: 13 Dec 2017
  * 
  *  Windows Service:
- *  i  - ver 1.0 : Handle Mykad
- *  ii - ver 2.0 : Handle Mykid
+ *  i   - ver 1.0 : (13-Dec-18) Handle Mykad
+ *  ii  - ver 2.0 : (01-Jan-18) Handle Mykid
+ *  iii - ver 3.0 : (13-Mar-18) Add hostname 
  *  
  *  
      */
+
+
 namespace ServiceConsole
 {
+    
+
     [ServiceContract]
     public interface IService
     {
@@ -42,6 +42,12 @@ namespace ServiceConsole
         [WebGet(ResponseFormat = WebMessageFormat.Json,
            RequestFormat = WebMessageFormat.Json), CorsEnabled]
         string readmykid();
+
+        [OperationContract]
+        [WebGet(ResponseFormat = WebMessageFormat.Json,
+           RequestFormat = WebMessageFormat.Json), CorsEnabled]
+        string getHostName();
+        
     }
 
     public class Service : IService
@@ -113,6 +119,15 @@ namespace ServiceConsole
             return sPerson;
         }
 
+        public string getHostName()
+        {
+            Attributes attr = new Attributes();
+            attr.hostname = Environment.MachineName;
+
+            string result = JsonConvert.SerializeObject(attr);
+            return result;
+        }
+        
         public class WindowsService : ServiceBase
         {
             public ServiceHost serviceHost = null;
@@ -202,6 +217,11 @@ namespace ServiceConsole
         public string photo;
     }
 
+    public class Attributes
+    {
+        public string hostname;
+    }
+
     class Program
     {
     }
@@ -220,9 +240,9 @@ namespace ServiceConsole
             process.Account = ServiceAccount.LocalSystem;
             service = new ServiceInstaller();
             service.StartType = ServiceStartMode.Automatic;
-            service.ServiceName = "MykadWinService";
-            service.DisplayName = "MyKad Windows Service";
-            service.Description = "Mykad service use to trigger smartcard reader";
+            service.ServiceName = "HTPWinService";
+            service.DisplayName = "Heitech WinServices";
+            service.Description = "Heitech Windows Services";
 
             Installers.Add(process);
             Installers.Add(service);
