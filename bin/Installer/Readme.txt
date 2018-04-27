@@ -1,5 +1,10 @@
-Installation steps
-------------------
+Use Installer
+-------------
+Run htecwinsvc2.2 Installer. Finished.
+
+
+Manual - Installation steps
+---------------------------
 
 1. Open cmd prompt in Administrator mode
 
@@ -11,7 +16,7 @@ Installation steps
 
 5. Open Services via search under start button.
 
-6. Search for Heitech WinService. Start the service.
+6. Search for htecwinsvc service. Start the service.
 
 7. If error exception occurs during installation, uninstall service.
 	Type: InstallUtil /u <Service dir>\ServiceConsole.exe
@@ -37,6 +42,22 @@ Testing installed service
 5. Type url : http://localhost:8000/getHostName
 	Output: PC hostname 
 
+%%%%%%%%%%%%%%%%%%%%
+%% htecwinsvcv2.2 %%
+%%%%%%%%%%%%%%%%%%%%
+
+# User can print pdf file in base64 from web browser
+1. Use example index.html provided in installation folder as reference.
+2. Modify with the application.
+
+3. Call http://localhost:8000/PostPdf/{id}
+	Ex: http://localhost:8000/PostPdf/pg101
+	to post generated base64 from apps to service
+  
+4. Call http://localhost:8000/ExecPrint/<Installation-folder>/runme.bat
+	Ex: http://localhost:8000/ExecPrint/htecwinsvc/runme.bat
+	to generate base64 to pdf file in installation folder and direct print.
+
 6. You're done installation.
 	
 Note: For Internet Explorer, if data didn't display out instead ask to download .json
@@ -46,6 +67,7 @@ Upgrade Version:
 v1 - handle mykad
 v2 - additional mykid support
 v2.1 - get hostname
+v2.2 - allow direct print from web
 
 
 Minimum Requirement:

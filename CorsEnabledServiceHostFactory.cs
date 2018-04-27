@@ -30,7 +30,10 @@ namespace ServiceConsole
 
         protected override void OnOpening()
         {
-            ServiceEndpoint endpoint = this.AddServiceEndpoint(this.contractType, new WebHttpBinding(), "");
+            WebHttpBinding webHttpBind = new WebHttpBinding();
+            webHttpBind.MaxReceivedMessageSize = 2147483647;
+
+            ServiceEndpoint endpoint = this.AddServiceEndpoint(this.contractType, webHttpBind, "");
 
             List<OperationDescription> corsEnabledOperations = endpoint.Contract.Operations
                 .Where(o => o.Behaviors.Find<CorsEnabledAttribute>() != null)

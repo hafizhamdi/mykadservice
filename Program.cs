@@ -7,6 +7,10 @@ using Newtonsoft.Json;
 using System.ComponentModel;
 using System.ServiceProcess;
 using System.Configuration.Install;
+using System.Runtime.Serialization;
+using System.IO;
+using System.Diagnostics;
+using System.Drawing.Printing;
 
 
 /*  Author: hafizh
@@ -15,16 +19,13 @@ using System.Configuration.Install;
  *  Windows Service:
  *  i   - ver 1.0 : (13-Dec-18) Handle Mykad
  *  ii  - ver 2.0 : (01-Jan-18) Handle Mykid
- *  iii - ver 3.0 : (13-Mar-18) Add hostname 
- *  
+ *  iii - ver 2.1 : (13-Mar-18) Add hostname 
+ *  iv  - ver 2.2 : (29-Mar-18) Add printer
  *  
      */
-
-
+     
 namespace ServiceConsole
 {
-    
-
     [ServiceContract]
     public interface IService
     {
@@ -48,10 +49,28 @@ namespace ServiceConsole
            RequestFormat = WebMessageFormat.Json), CorsEnabled]
         string getHostName();
         
+        [OperationContract]
+        [WebInvoke(Method = "POST",
+            BodyStyle = WebMessageBodyStyle.WrappedResponse,
+            //RequestFormat = WebMessageFormat.Json,
+            ResponseFormat = WebMessageFormat.Json,
+            UriTemplate = "/PostPdf/{id}"), CorsEnabled]
+        string PostPdf(Pdf data, string id);
+
+        [OperationContract]
+        [WebGet(ResponseFormat = WebMessageFormat.Json,
+           RequestFormat = WebMessageFormat.Json,
+           UriTemplate = "/ExecPrint/{path}/{progName}"), CorsEnabled]
+        string ExecPrint(string path, string progName);
+
     }
 
+    
+    
     public class Service : IService
     {
+        Printer p;
+
         public string Hello()
         {
             return "Hello Im In!";
@@ -127,7 +146,40 @@ namespace ServiceConsole
             string result = JsonConvert.SerializeObject(attr);
             return result;
         }
-        
+
+        public string PostPdf(Pdf data, string id)
+        {
+            var myPdf = JsonConvert.SerializeObject(data);
+            var base64 = data.Base64;
+
+            p = new Printer(base64.ToString(), id);
+            return base64.ToString();
+        }
+
+        public string ExecPrint(string path, string progName) {
+            string result = "";
+
+            if (Printer.pdfBase64 != "")
+            {
+                Byte[] bytes = Convert.FromBase64String(Printer.pdfBase64);
+                string filename = Printer.fileid + ".pdf";
+                File.WriteAllBytes("C:\\" + path + "\\"+filename, bytes);
+
+                PrinterSettings settings = new PrinterSettings();
+                result += settings.PrinterName;
+
+                Process process = new Process();
+                process.StartInfo.FileName = "cmd.exe";
+                process.StartInfo.Arguments = @"/C " + "C:\\" + path + "\\" + progName;
+                process.StartInfo.UseShellExecute = false;
+                process.StartInfo.RedirectStandardOutput = true;
+                process.StartInfo.RedirectStandardError = true;
+                process.Start();
+
+            }
+
+            return result;          
+        }
         public class WindowsService : ServiceBase
         {
             public ServiceHost serviceHost = null;
@@ -193,6 +245,7 @@ namespace ServiceConsole
             }
         }
     }
+    
 
     public class Person
     {
@@ -222,8 +275,36 @@ namespace ServiceConsole
         public string hostname;
     }
 
+    public class Pdf
+    {
+        public string Id;
+        public string Base64;
+    }
+
     class Program
     {
+        public Program(string filename, string base64)
+        {
+            Byte[] bytes = Convert.FromBase64String(base64);
+            ByteArrayToFile(filename, bytes);
+        }
+
+        public bool ByteArrayToFile(string fileName, byte[] byteArray)
+        {
+            try
+            {
+                using (var fs = new FileStream(fileName, FileMode.Create, FileAccess.Write))
+                {
+                    fs.Write(byteArray, 0, byteArray.Length);
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Exception caught in process: {0}", ex);
+                return false;
+            }
+        }
     }
 
     // Provide the ProjectInstaller class which allows 
@@ -240,9 +321,9 @@ namespace ServiceConsole
             process.Account = ServiceAccount.LocalSystem;
             service = new ServiceInstaller();
             service.StartType = ServiceStartMode.Automatic;
-            service.ServiceName = "HTPWinService";
-            service.DisplayName = "Heitech WinServices";
-            service.Description = "Heitech Windows Services";
+            service.ServiceName = "htecwinsvc";
+            service.DisplayName = "Htec Windows Service";
+            service.Description = "Web browser use windows service to interact with card reader and printer";
 
             Installers.Add(process);
             Installers.Add(service);
