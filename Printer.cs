@@ -13,12 +13,21 @@ namespace ServiceConsole
     {
         public static string pdfBase64;
         public static string fileid;
+        public static int numOfCopies;
 
         public Printer() { }
+
         public Printer(string base64, string id)
         {
             pdfBase64 = base64;
             fileid = id;
+        }
+        
+        public Printer(string base64, string id, int copies)
+        {
+            pdfBase64 = base64;
+            fileid = id;
+            numOfCopies = copies;
         }
 
         public static void RunExecutable(string executable, string arguments)
@@ -48,6 +57,5 @@ namespace ServiceConsole
                  executable, process.ExitCode, buffer.ToString()));
             }
         }
-
     }
 }

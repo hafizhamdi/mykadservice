@@ -8,7 +8,7 @@
 <button type="button" id='printButton'>Click Me!</button>
 <div id='response' style='min-height:400px'></div>
 
-<script src='js/jquery-3.3.1.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 <script type="text/javascript">
 function PostPdf() {
     var pdfData = {
@@ -18,14 +18,14 @@ function PostPdf() {
 	console.log(pdfData);
 	 $.ajax({
         type: "POST",
-        url: "http://localhost:8000/PostPdf/pg101",
+        url: "http://localhost:8000/PostPdfCopies?numOfCopies=2",
         data: JSON.stringify(pdfData),
 		contentType: "application/json; charset=utf-8",
         processData: true,
         
         success: function (output) {
 			console.log(output);
-			$('#response').html(output.PostPdfResult);
+			$('#response').html(output.PostPdfCopiesResult);
 		/*	var obj = JSON.parse(output.PrintPdfResult);
 			console.log(obj);
             //alert("success..." + data);

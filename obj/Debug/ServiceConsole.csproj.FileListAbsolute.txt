@@ -9,10 +9,10 @@ C:\Users\hafizhamdi\source\repos\SmartCardService\ServiceConsole\bin\Debug\pcsc-
 C:\Users\hafizhamdi\source\repos\SmartCardService\ServiceConsole\obj\Debug\ServiceConsole.csproj.CoreCompileInputs.cache
 C:\Users\hafizhamdi\source\repos\SmartCardService\ServiceConsole\obj\Debug\ServiceConsole.exe
 C:\Users\hafizhamdi\source\repos\SmartCardService\ServiceConsole\obj\Debug\ServiceConsole.pdb
-E:\github\mykadservice\bin\Debug\ServiceConsole.exe.config
 E:\github\mykadservice\bin\Debug\ServiceConsole.exe
-E:\github\mykadservice\bin\Debug\ServiceConsole.pdb
-E:\github\mykadservice\obj\Debug\ServiceConsole.csprojResolveAssemblyReference.cache
+E:\github\mykadservice\bin\Debug\ServiceConsole.exe.config
 E:\github\mykadservice\obj\Debug\ServiceConsole.csproj.CoreCompileInputs.cache
 E:\github\mykadservice\obj\Debug\ServiceConsole.exe
 E:\github\mykadservice\obj\Debug\ServiceConsole.pdb
+E:\github\mykadservice\bin\Debug\ServiceConsole.pdb
+E:\github\mykadservice\obj\Debug\ServiceConsole.csprojResolveAssemblyReference.cache

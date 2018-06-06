@@ -1,0 +1,84 @@
+﻿Installing assembly 'E:\github\mykadservice\bin\Release\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   assemblypath = E:\github\mykadservice\bin\Release\ServiceConsole.exe
+   logfile = E:\github\mykadservice\bin\Release\ServiceConsole.InstallLog
+Installing service htecwinsvc...
+Service htecwinsvc has been successfully installed.
+Creating EventLog source htecwinsvc in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Release\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   assemblypath = E:\github\mykadservice\bin\Release\ServiceConsole.exe
+   logfile = E:\github\mykadservice\bin\Release\ServiceConsole.InstallLog
+Uninstalling assembly 'E:\github\mykadservice\bin\Release\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\github\mykadservice\bin\Release\ServiceConsole.exe
+   logfile = E:\github\mykadservice\bin\Release\ServiceConsole.InstallLog
+Removing EventLog source htecwinsvc.
+Service htecwinsvc is being removed from the system...
+Service htecwinsvc was successfully removed from the system.
+Installing assembly 'E:\github\mykadservice\bin\Release\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   assemblypath = E:\github\mykadservice\bin\Release\ServiceConsole.exe
+   logfile = E:\github\mykadservice\bin\Release\ServiceConsole.InstallLog
+Installing service htecwinsvc...
+Service htecwinsvc has been successfully installed.
+Creating EventLog source htecwinsvc in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Release\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   assemblypath = E:\github\mykadservice\bin\Release\ServiceConsole.exe
+   logfile = E:\github\mykadservice\bin\Release\ServiceConsole.InstallLog
+Uninstalling assembly 'E:\github\mykadservice\bin\Release\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\github\mykadservice\bin\Release\ServiceConsole.exe
+   logfile = E:\github\mykadservice\bin\Release\ServiceConsole.InstallLog
+Removing EventLog source htecwinsvc.
+Service htecwinsvc is being removed from the system...
+Service htecwinsvc was successfully removed from the system.
+Uninstalling assembly 'E:\github\mykadservice\bin\Release\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Release\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Release\ServiceConsole.exe
+Removing EventLog source htecwinsvc.
+Service htecwinsvc is being removed from the system...
+Service htecwinsvc was successfully removed from the system.
+Installing assembly 'E:\github\mykadservice\bin\Release\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Release\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Release\ServiceConsole.exe
+   logtoconsole = 
+Installing service htecwinsvc...
+Service htecwinsvc has been successfully installed.
+Creating EventLog source htecwinsvc in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Release\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Release\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Release\ServiceConsole.exe
+   logtoconsole = 
+Installing assembly 'E:\github\mykadservice\bin\Release\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Release\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Release\ServiceConsole.exe
+   logtoconsole = 
+Installing service HISHTPService...
+Service HISHTPService has been successfully installed.
+Creating EventLog source HISHTPService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Release\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Release\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Release\ServiceConsole.exe
+   logtoconsole = 

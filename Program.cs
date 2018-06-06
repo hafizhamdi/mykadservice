@@ -11,6 +11,7 @@ using System.Runtime.Serialization;
 using System.IO;
 using System.Diagnostics;
 using System.Drawing.Printing;
+using System.Windows.Forms;
 
 
 /*  Author: hafizh
@@ -23,7 +24,7 @@ using System.Drawing.Printing;
  *  iv  - ver 2.2 : (29-Mar-18) Add printer
  *  
      */
-     
+
 namespace ServiceConsole
 {
     [ServiceContract]
@@ -58,10 +59,18 @@ namespace ServiceConsole
         string PostPdf(Pdf data, string id);
 
         [OperationContract]
+        [WebInvoke(Method = "POST",
+            BodyStyle = WebMessageBodyStyle.WrappedResponse,
+            //RequestFormat = WebMessageFormat.Json,
+            ResponseFormat = WebMessageFormat.Json,
+            UriTemplate = "/PostPdfCopies?numOfCopies={copies}"), CorsEnabled]
+        string PostPdfCopies(Pdf data, int copies);
+        
+        [OperationContract]
         [WebGet(ResponseFormat = WebMessageFormat.Json,
            RequestFormat = WebMessageFormat.Json,
-           UriTemplate = "/ExecPrint/{path}/{progName}"), CorsEnabled]
-        string ExecPrint(string path, string progName);
+           UriTemplate = "/ExecPrint/{drive}/{path}/{progName}"), CorsEnabled]
+        string ExecPrint(string drive, string path, string progName);
 
     }
 
@@ -142,7 +151,7 @@ namespace ServiceConsole
         {
             Attributes attr = new Attributes();
             attr.hostname = Environment.MachineName;
-
+           
             string result = JsonConvert.SerializeObject(attr);
             return result;
         }
@@ -151,30 +160,60 @@ namespace ServiceConsole
         {
             var myPdf = JsonConvert.SerializeObject(data);
             var base64 = data.Base64;
-
+          
             p = new Printer(base64.ToString(), id);
             return base64.ToString();
         }
 
-        public string ExecPrint(string path, string progName) {
-            string result = "";
+        
+        public string PostPdfCopies(Pdf data, int copies)
+        {
+            var myPdf = JsonConvert.SerializeObject(data);
+            var base64 = data.Base64;
 
+            p = new Printer(base64.ToString(), "0", copies);
+            return base64.ToString();
+        }
+        
+        public string ExecPrint(string drive, string path, string progName) {
+            string result = "";
+           
             if (Printer.pdfBase64 != "")
             {
                 Byte[] bytes = Convert.FromBase64String(Printer.pdfBase64);
                 string filename = Printer.fileid + ".pdf";
-                File.WriteAllBytes("C:\\" + path + "\\"+filename, bytes);
+                string src_path = drive + ":\\" + path;
+                File.WriteAllBytes(src_path + "\\"+filename, bytes);
 
                 PrinterSettings settings = new PrinterSettings();
-                result += settings.PrinterName;
+                result += "\nPrinter Name:[" +settings.PrinterName + "]";
+
+                string param = "";
+                if (Printer.numOfCopies != 0)
+                {
+                    param = progName + " " +
+                            src_path + " " +
+                            Printer.numOfCopies + "x";
+                }
+                else
+                {
+                    param = progName + " " +
+                            src_path + " 1x";
+                }
+                result += "\nSrc Path:[" + src_path + "]";
+                result += "\nNo. of Copies:[" +Printer.numOfCopies + "]";
+                result += "\nStatus:[Success]";
 
                 Process process = new Process();
                 process.StartInfo.FileName = "cmd.exe";
-                process.StartInfo.Arguments = @"/C " + "C:\\" + path + "\\" + progName;
+                process.StartInfo.Arguments = @"/c " + src_path + "\\" + param;
                 process.StartInfo.UseShellExecute = false;
-                process.StartInfo.RedirectStandardOutput = true;
-                process.StartInfo.RedirectStandardError = true;
+                process.StartInfo.RedirectStandardOutput = false;
+                process.StartInfo.RedirectStandardError = false;
                 process.Start();
+                process.WaitForExit();
+
+                process.Close();
 
             }
 
@@ -186,7 +225,7 @@ namespace ServiceConsole
             public WindowsService()
             {
                 // Name the Windows Service
-                ServiceName = "WindowsService";
+                ServiceName = "HISHTPService";
             }
 
             public static void Main()
@@ -321,9 +360,9 @@ namespace ServiceConsole
             process.Account = ServiceAccount.LocalSystem;
             service = new ServiceInstaller();
             service.StartType = ServiceStartMode.Automatic;
-            service.ServiceName = "htecwinsvc";
-            service.DisplayName = "Htec Windows Service";
-            service.Description = "Web browser use windows service to interact with card reader and printer";
+            service.ServiceName = "HISHTPService";
+            service.DisplayName = "HISHTP Service";
+            service.Description = "Self-hosted Service for Web browser interact with card reader and printer";
 
             Installers.Add(process);
             Installers.Add(service);
