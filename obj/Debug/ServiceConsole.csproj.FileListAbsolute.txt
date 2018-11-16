@@ -15,4 +15,14 @@ E:\github\mykadservice\obj\Debug\ServiceConsole.csproj.CoreCompileInputs.cache
 E:\github\mykadservice\obj\Debug\ServiceConsole.exe
 E:\github\mykadservice\obj\Debug\ServiceConsole.pdb
 E:\github\mykadservice\bin\Debug\ServiceConsole.pdb
-E:\github\mykadservice\obj\Debug\ServiceConsole.csprojResolveAssemblyReference.cache
+E:\github\mykadservice\obj\Debug\ServiceConsole.csprojAssemblyReference.cache
+E:\github\mykadservice\obj\Debug\ServiceConsole.csproj.CopyComplete
+E:\github\mykadservice\obj\Debug\Interop.WIA.dll
+E:\github\mykadservice\obj\Debug\ServiceConsole.csproj.ResolveComReference.cache
+E:\github\mykadservice\bin\Debug\Interop.WIA.dll
+E:\github\mykadservice\bin\Debug\PdfSharp.Charting.dll
+E:\github\mykadservice\bin\Debug\PdfSharp.dll
+E:\github\mykadservice\bin\Debug\PdfSharp.xml
+E:\github\mykadservice\bin\Debug\PdfSharp.Charting.xml
+E:\github\mykadservice\bin\Debug\de\PdfSharp.resources.dll
+E:\github\mykadservice\bin\Debug\de\PdfSharp.Charting.resources.dll

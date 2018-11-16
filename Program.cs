@@ -12,6 +12,10 @@ using System.IO;
 using System.Diagnostics;
 using System.Drawing.Printing;
 using System.Windows.Forms;
+using WIA;
+using PdfSharp;
+using PdfSharp.Pdf;
+using PdfSharp.Drawing;
 
 
 /*  Author: hafizh
@@ -21,7 +25,8 @@ using System.Windows.Forms;
  *  i   - ver 1.0 : (13-Dec-18) Handle Mykad
  *  ii  - ver 2.0 : (01-Jan-18) Handle Mykid
  *  iii - ver 2.1 : (13-Mar-18) Add hostname 
- *  iv  - ver 2.2 : (29-Mar-18) Add printer
+ *  iv  - ver 2.2&2.3 : (29-Mar-18) Add printer
+ *  v   - ver 2.4 : (07-Nov-18) Add Printer name and set environment
  *  
      */
 
@@ -63,14 +68,52 @@ namespace ServiceConsole
             BodyStyle = WebMessageBodyStyle.WrappedResponse,
             //RequestFormat = WebMessageFormat.Json,
             ResponseFormat = WebMessageFormat.Json,
-            UriTemplate = "/PostPdfCopies?numOfCopies={copies}"), CorsEnabled]
-        string PostPdfCopies(Pdf data, int copies);
-        
+            UriTemplate = "/PostPdfCopies?numOfCopies={copies}&prtName={prtName}"), CorsEnabled]
+        string PostPdfCopies(Pdf data, int copies, string prtName);
+
+        [OperationContract]
+        [WebInvoke(Method = "POST",
+            BodyStyle = WebMessageBodyStyle.WrappedResponse,
+            //RequestFormat = WebMessageFormat.Json,
+            ResponseFormat = WebMessageFormat.Json,
+            UriTemplate = "/PDFtoLabelPrinter?printerName={prtName}&printerType={prtType}"), CorsEnabled]
+        string PDFtoLabelPrinter(Pdf data, string prtName, string prtType);
+
         [OperationContract]
         [WebGet(ResponseFormat = WebMessageFormat.Json,
            RequestFormat = WebMessageFormat.Json,
            UriTemplate = "/ExecPrint/{drive}/{path}/{progName}"), CorsEnabled]
         string ExecPrint(string drive, string path, string progName);
+
+        [OperationContract]
+        [WebGet(ResponseFormat = WebMessageFormat.Json,
+           RequestFormat = WebMessageFormat.Json,
+           UriTemplate = "/GetEnvironment?envName={envName}"), CorsEnabled]
+        string GetEnvironment(string envName);
+
+        [OperationContract]
+        [WebGet(ResponseFormat = WebMessageFormat.Json,
+            RequestFormat = WebMessageFormat.Json,
+            UriTemplate = "/SetEnvironment?envName={envName}&envValue={envValue}"), CorsEnabled]
+        string SetEnvironment(string envName, string envValue);
+
+        [OperationContract]
+        [WebGet(ResponseFormat = WebMessageFormat.Json,
+            RequestFormat = WebMessageFormat.Json,
+            UriTemplate = "/ScanDocument?fileid={fileid}"), CorsEnabled]
+        string ScanDocument(String fileid);
+
+        [OperationContract]
+        [WebGet(ResponseFormat = WebMessageFormat.Json,
+            RequestFormat = WebMessageFormat.Json,
+            UriTemplate = "/RetrieveScannedDoc?fileid={fileid}"), CorsEnabled]
+        string RetrieveScannedDoc(string fileid);
+
+        [OperationContract]
+        [WebGet(ResponseFormat = WebMessageFormat.Json,
+            RequestFormat = WebMessageFormat.Json,
+            UriTemplate = "/ListPrinter"), CorsEnabled]
+        string ListPrinter();
 
     }
 
@@ -79,6 +122,7 @@ namespace ServiceConsole
     public class Service : IService
     {
         Printer p;
+        Scanner device;
 
         public string Hello()
         {
@@ -166,15 +210,26 @@ namespace ServiceConsole
         }
 
         
-        public string PostPdfCopies(Pdf data, int copies)
+        public string PostPdfCopies(Pdf data, int copies, string prtName)
         {
             var myPdf = JsonConvert.SerializeObject(data);
             var base64 = data.Base64;
 
-            p = new Printer(base64.ToString(), "0", copies);
+            p = new Printer(base64.ToString(), "0", copies, prtName);
             return base64.ToString();
         }
-        
+
+        public string PDFtoLabelPrinter(Pdf data, string prtName, string prtType)
+        {
+            var myPdf = JsonConvert.SerializeObject(data);
+            var base64 = data.Base64;
+
+            p = new Printer(base64.ToString(), "0", 1, prtName, prtType); //default copies=1
+            return base64.ToString() + "\n" +
+                    "printerName=["+ Printer.printerName + "]\n"+
+                    "printerType=["+ Printer.printerType + "]\n";
+        }
+
         public string ExecPrint(string drive, string path, string progName) {
             string result = "";
            
@@ -189,11 +244,14 @@ namespace ServiceConsole
                 result += "\nPrinter Name:[" +settings.PrinterName + "]";
 
                 string param = "";
+               
                 if (Printer.numOfCopies != 0)
                 {
                     param = progName + " " +
                             src_path + " " +
-                            Printer.numOfCopies + "x";
+                            Printer.numOfCopies + "x" + " " +
+                            Printer.printerType + " " + 
+                            Printer.printerName;
                 }
                 else
                 {
@@ -202,6 +260,8 @@ namespace ServiceConsole
                 }
                 result += "\nSrc Path:[" + src_path + "]";
                 result += "\nNo. of Copies:[" +Printer.numOfCopies + "]";
+                result += "\nPrinter Name:[" + Printer.printerName + "]";
+                result += "\nPrinter Type:[" + Printer.printerType + "]";
                 result += "\nStatus:[Success]";
 
                 Process process = new Process();
@@ -219,6 +279,119 @@ namespace ServiceConsole
 
             return result;          
         }
+
+        public string GetEnvironment(string envName)
+        {
+            string envValue;
+
+            envValue = Environment.GetEnvironmentVariable(envName);
+            
+            return "EnvName:"+ envName + " " + "EnvValue:" + envValue + ".getted";
+        }
+
+        public string SetEnvironment(string envName, string envValue)
+        {
+            string result="";
+            // Determine whether the environment variable exists.
+            if (Environment.GetEnvironmentVariable(envName) != null)
+            { 
+                // If it doesn't exist, create it.
+                Environment.SetEnvironmentVariable(envName, envValue, EnvironmentVariableTarget.Machine);
+                result += "EnvName:" + envName + " " + "EnvValue:" + envValue + ".setted";
+            }
+            return result; 
+        }
+
+        public string ScanDocument(string fileid) {
+
+            device = null;
+            string result = "";
+            // Create a DeviceManager instance
+            var deviceManager = new DeviceManager();
+            
+
+            // Loop through the list of devices and add the name to the listbox
+            for (int i = 1; i <= deviceManager.DeviceInfos.Count; i++)
+            {
+                // Add the device only if it's a scanner
+                if (deviceManager.DeviceInfos[i].Type != WiaDeviceType.ScannerDeviceType)
+                {
+                    continue;
+                }
+
+                // Add the Scanner device to the listbox (the entire DeviceInfos object)
+                // Important: we store an object of type scanner (which ToString method returns the name of the scanner)
+                device = new Scanner(deviceManager.DeviceInfos[i]);
+               
+            }
+
+            string filename = "";
+            if(device != null)
+            {
+                ImageFile image = new ImageFile();
+                string imgExtension = "";
+
+                image = device.ScanJPEG();
+                imgExtension = ".jpeg";
+
+                filename = fileid + imgExtension;
+                // Saving image name
+                image.SaveFile("C:\\tmp\\"+filename);
+
+                //byte[] byteImg = (byte[])image.FileData.get_BinaryData();      
+
+                //string Base64Img = Convert.ToBase64String(byteImg);
+
+                PdfDocument doc = new PdfDocument();
+                PdfPage page = doc.AddPage();
+                XGraphics gfx = XGraphics.FromPdfPage(page);
+
+                XImage img = XImage.FromFile("C:\\tmp\\" + filename);
+                gfx.DrawImage(img, 0, 0);
+                Scanner.fileID = fileid;
+                doc.Save("C:\\tmp\\"+ fileid + ".pdf");
+                doc.Close();
+                
+                //result += Base64Img;
+
+            }
+            
+            return result += "Scanned document created ["+filename+"]";
+        }
+        
+        public string RetrieveScannedDoc(string fileid)
+        {
+            byte[] file = File.ReadAllBytes("C:\\tmp\\" + fileid+".pdf");
+            string scannedDoc = Convert.ToBase64String(file);
+            //device.setImgBase64(scannedDoc);
+
+            string result = "";
+
+            result += scannedDoc;
+           
+            return result;
+        }
+
+        public string ListPrinter()
+        {
+            string result ="{ 'printers': [";
+            foreach (string printer in System.Drawing.Printing.PrinterSettings.InstalledPrinters)
+            {
+                if(printer != "")
+                {
+                    result += "'" + printer + "',";
+                }
+            }
+
+            if (result.EndsWith(",") == true)
+            {
+                string tmp = "";
+                tmp = result.Substring(0, result.Length - 1); 
+                result += tmp + "]}";
+            }
+            return result;
+        }
+
         public class WindowsService : ServiceBase
         {
             public ServiceHost serviceHost = null;

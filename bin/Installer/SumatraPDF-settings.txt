@@ -1,4 +1,4 @@
-﻿# For documentation, see http://www.sumatrapdfreader.org/settings3.2.html
+﻿# For documentation, see https://www.sumatrapdfreader.org/settings3.2.html
 
 MainWindowBackground = #80fff200
 EscToExit = false
@@ -30,14 +30,14 @@ ChmUI [
 ]
 ExternalViewers [
 ]
-ShowMenubar = true
+ShowMenubar = false
 ReloadModifiedDocuments = true
 FullPathInTitle = false
 ZoomLevels = 8.33 12.5 18 25 33.33 50 66.67 75 100 125 150 200 300 400 600 800 1000 1200 1600 2000 2400 3200 4800 6400
 ZoomIncrement = 0
 
 PrinterDefaults [
-	PrintScale = shrink
+	PrintScale = fit
 ]
 ForwardSearch [
 	HighlightOffset = 0
@@ -58,7 +58,7 @@ EnableTeXEnhancements = false
 DefaultDisplayMode = automatic
 DefaultZoom = fit page
 WindowState = 1
-WindowPos = 0 0 0 0
+WindowPos = 402 0 562 728
 ShowToc = true
 SidebarDx = 0
 TocDy = 0
@@ -66,10 +66,137 @@ ShowStartPage = true
 UseTabs = true
 
 FileStates [
+	[
+		FilePath = E:\github\mykadservice\bin\Installer\0.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 14
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 402 0 562 728
+		ShowToc = false
+		SidebarDx = 0
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\github\mykadservice\bin\Installer\0_5.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 402 0 562 728
+		ShowToc = false
+		SidebarDx = 0
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\github\mykadservice\bin\Installer\0_10.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 402 0 562 728
+		ShowToc = false
+		SidebarDx = 0
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\github\mykadservice\bin\Installer\0_12.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 402 0 562 728
+		ShowToc = false
+		SidebarDx = 0
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\github\mykadservice\bin\Installer\0_19.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 402 0 562 728
+		ShowToc = false
+		SidebarDx = 0
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\github\mykadservice\bin\Installer\0_20.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 402 0 562 728
+		ShowToc = false
+		SidebarDx = 0
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
 ]
 SessionData [
 ]
 TimeOfLastUpdateCheck = 0 0
-OpenCountWeek = 386
+OpenCountWeek = 410
 
 # Settings after this line have not been recognized by the current version
+PrereleaseSettings [
+	TabWidth = 300
+]
+AnnotationDefaults [
+	HighlightColor = #ffff60
+	SaveIntoDocument = true
+]

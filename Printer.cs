@@ -14,6 +14,8 @@ namespace ServiceConsole
         public static string pdfBase64;
         public static string fileid;
         public static int numOfCopies;
+        public static string printerName;
+        public static string printerType;
 
         public Printer() { }
 
@@ -23,11 +25,21 @@ namespace ServiceConsole
             fileid = id;
         }
         
-        public Printer(string base64, string id, int copies)
+        public Printer(string base64, string id, int copies, string prtName)
         {
             pdfBase64 = base64;
             fileid = id;
             numOfCopies = copies;
+            printerName = prtName;
+        }
+
+        public Printer(string base64, string id, int copies, string prtName, string prtType)
+        {
+            pdfBase64 = base64;
+            fileid = id;
+            numOfCopies = copies;
+            printerName = prtName;
+            printerType = prtType;
         }
 
         public static void RunExecutable(string executable, string arguments)

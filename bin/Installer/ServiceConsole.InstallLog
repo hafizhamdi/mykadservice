@@ -82,3 +82,208 @@ Affected parameters are:
    logfile = E:\github\mykadservice\bin\Release\ServiceConsole.InstallLog
    assemblypath = E:\github\mykadservice\bin\Release\ServiceConsole.exe
    logtoconsole = 
+Installing assembly 'E:\github\mykadservice\bin\Installer\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Installer\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Installer\ServiceConsole.exe
+   logtoconsole = 
+Installing service HISHTPService...
+Service HISHTPService has been successfully installed.
+Creating EventLog source HISHTPService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Installer\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Installer\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Installer\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Installer\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Installer\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Installer\ServiceConsole.exe
+Removing EventLog source HISHTPService.
+Service HISHTPService is being removed from the system...
+Service HISHTPService was successfully removed from the system.
+Attempt to stop service HISHTPService.
+Installing assembly 'E:\github\mykadservice\bin\Installer\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Installer\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Installer\ServiceConsole.exe
+   logtoconsole = 
+Installing service HISHTPService...
+Service HISHTPService has been successfully installed.
+Creating EventLog source HISHTPService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Installer\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Installer\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Installer\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Installer\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Installer\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Installer\ServiceConsole.exe
+Removing EventLog source HISHTPService.
+Service HISHTPService is being removed from the system...
+Service HISHTPService was successfully removed from the system.
+Attempt to stop service HISHTPService.
+Installing assembly 'E:\github\mykadservice\bin\Installer\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Installer\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Installer\ServiceConsole.exe
+   logtoconsole = 
+Installing service HISHTPService...
+Service HISHTPService has been successfully installed.
+Creating EventLog source HISHTPService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Installer\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Installer\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Installer\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Installer\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Installer\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Installer\ServiceConsole.exe
+Removing EventLog source HISHTPService.
+Service HISHTPService is being removed from the system...
+Service HISHTPService was successfully removed from the system.
+Attempt to stop service HISHTPService.
+Installing assembly 'E:\github\mykadservice\bin\Installer\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Installer\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Installer\ServiceConsole.exe
+   logtoconsole = 
+Installing service HISHTPService...
+Service HISHTPService has been successfully installed.
+Creating EventLog source HISHTPService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Installer\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Installer\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Installer\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Installer\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Installer\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Installer\ServiceConsole.exe
+Removing EventLog source HISHTPService.
+Service HISHTPService is being removed from the system...
+Service HISHTPService was successfully removed from the system.
+Attempt to stop service HISHTPService.
+Installing assembly 'E:\github\mykadservice\bin\Installer\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Installer\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Installer\ServiceConsole.exe
+   logtoconsole = 
+Installing service HISHTPService...
+Service HISHTPService has been successfully installed.
+Creating EventLog source HISHTPService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Installer\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Installer\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Installer\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Installer\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Installer\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Installer\ServiceConsole.exe
+Removing EventLog source HISHTPService.
+Service HISHTPService is being removed from the system...
+Service HISHTPService was successfully removed from the system.
+Installing assembly 'E:\github\mykadservice\bin\Installer\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Installer\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Installer\ServiceConsole.exe
+   logtoconsole = 
+Installing service HISHTPService...
+Service HISHTPService has been successfully installed.
+Creating EventLog source HISHTPService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Installer\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Installer\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Installer\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Installer\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Installer\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Installer\ServiceConsole.exe
+Removing EventLog source HISHTPService.
+Service HISHTPService is being removed from the system...
+Service HISHTPService was successfully removed from the system.
+Attempt to stop service HISHTPService.
+Installing assembly 'E:\github\mykadservice\bin\Installer\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Installer\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Installer\ServiceConsole.exe
+   logtoconsole = 
+Installing service HISHTPService...
+Service HISHTPService has been successfully installed.
+Creating EventLog source HISHTPService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Installer\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Installer\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Installer\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Installer\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Installer\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Installer\ServiceConsole.exe
+Removing EventLog source HISHTPService.
+Service HISHTPService is being removed from the system...
+Service HISHTPService was successfully removed from the system.
+Attempt to stop service HISHTPService.
+Installing assembly 'E:\github\mykadservice\bin\Installer\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Installer\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Installer\ServiceConsole.exe
+   logtoconsole = 
+Installing service HISHTPService...
+Service HISHTPService has been successfully installed.
+Creating EventLog source HISHTPService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Installer\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Installer\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Installer\ServiceConsole.exe
+   logtoconsole = 
+Uninstalling assembly 'E:\github\mykadservice\bin\Installer\ServiceConsole.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\github\mykadservice\bin\Installer\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Installer\ServiceConsole.exe
+Removing EventLog source HISHTPService.
+Service HISHTPService is being removed from the system...
+Service HISHTPService was successfully removed from the system.
+Installing assembly 'E:\github\mykadservice\bin\Installer\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Installer\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Installer\ServiceConsole.exe
+   logtoconsole = 
+Installing service HISHTPService...
+Service HISHTPService has been successfully installed.
+Creating EventLog source HISHTPService in log Application...
+Committing assembly 'E:\github\mykadservice\bin\Installer\ServiceConsole.exe'.
+Affected parameters are:
+   i = 
+   logfile = E:\github\mykadservice\bin\Installer\ServiceConsole.InstallLog
+   assemblypath = E:\github\mykadservice\bin\Installer\ServiceConsole.exe
+   logtoconsole = 

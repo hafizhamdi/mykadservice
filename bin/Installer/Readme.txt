@@ -73,7 +73,7 @@ v2.2 - allow direct print from web
 Minimum Requirement:
 
 Supported OS: Windows 7/ 10
-.Net Framework: v4.7
+.Net Framework: v4.7.1
 
 Thank you for using this service.
 
