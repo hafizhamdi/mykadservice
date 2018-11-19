@@ -238,6 +238,7 @@ namespace ServiceConsole
                 Byte[] bytes = Convert.FromBase64String(Printer.pdfBase64);
                 string filename = Printer.fileid + ".pdf";
                 string src_path = drive + ":\\" + path;
+                Printer.srcPath = src_path;
                 File.WriteAllBytes(src_path + "\\"+filename, bytes);
 
                 PrinterSettings settings = new PrinterSettings();
@@ -335,8 +336,10 @@ namespace ServiceConsole
                 imgExtension = ".jpeg";
 
                 filename = fileid + imgExtension;
+                string src_path = "";
+                src_path = Printer.srcPath;
                 // Saving image name
-                image.SaveFile("C:\\tmp\\"+filename);
+                image.SaveFile(filename);
 
                 //byte[] byteImg = (byte[])image.FileData.get_BinaryData();      
 
@@ -346,10 +349,10 @@ namespace ServiceConsole
                 PdfPage page = doc.AddPage();
                 XGraphics gfx = XGraphics.FromPdfPage(page);
 
-                XImage img = XImage.FromFile("C:\\tmp\\" + filename);
+                XImage img = XImage.FromFile(filename);
                 gfx.DrawImage(img, 0, 0);
                 Scanner.fileID = fileid;
-                doc.Save("C:\\tmp\\"+ fileid + ".pdf");
+                doc.Save(fileid + ".pdf");
                 doc.Close();
                 
                 //result += Base64Img;
@@ -361,14 +364,19 @@ namespace ServiceConsole
         
         public string RetrieveScannedDoc(string fileid)
         {
-            byte[] file = File.ReadAllBytes("C:\\tmp\\" + fileid+".pdf");
+            string src_path = Printer.srcPath;
+            byte[] file = File.ReadAllBytes(fileid+".pdf");
             string scannedDoc = Convert.ToBase64String(file);
             //device.setImgBase64(scannedDoc);
 
             string result = "";
+            if (scannedDoc != "")
+            {
+                result = "{'Fileid': " + "'" + fileid + "',";
+                result += "'Base64':'";
 
-            result += scannedDoc;
-           
+                result += scannedDoc + "'}";
+            }
             return result;
         }
 
@@ -387,7 +395,7 @@ namespace ServiceConsole
             {
                 string tmp = "";
                 tmp = result.Substring(0, result.Length - 1); 
-                result += tmp + "]}";
+                result = tmp + "]}";
             }
             return result;
         }
