@@ -68,16 +68,16 @@ namespace ServiceConsole
             BodyStyle = WebMessageBodyStyle.WrappedResponse,
             //RequestFormat = WebMessageFormat.Json,
             ResponseFormat = WebMessageFormat.Json,
-            UriTemplate = "/PostPdfCopies?numOfCopies={copies}&prtName={prtName}"), CorsEnabled]
-        string PostPdfCopies(Pdf data, int copies, string prtName);
+            UriTemplate = "/PostPdfCopies/{id}?numOfCopies={copies}&printerName={prtName}"), CorsEnabled]
+        string PostPdfCopies(Pdf data, string id, int copies, string prtName);
 
         [OperationContract]
         [WebInvoke(Method = "POST",
             BodyStyle = WebMessageBodyStyle.WrappedResponse,
             //RequestFormat = WebMessageFormat.Json,
             ResponseFormat = WebMessageFormat.Json,
-            UriTemplate = "/PDFtoLabelPrinter?printerName={prtName}&printerType={prtType}"), CorsEnabled]
-        string PDFtoLabelPrinter(Pdf data, string prtName, string prtType);
+            UriTemplate = "/PDFtoLabelPrinter/{id}?printerName={prtName}&printerType={prtType}"), CorsEnabled]
+        string PDFtoLabelPrinter(Pdf data, string id, string prtName, string prtType);
 
         [OperationContract]
         [WebGet(ResponseFormat = WebMessageFormat.Json,
@@ -100,14 +100,14 @@ namespace ServiceConsole
         [OperationContract]
         [WebGet(ResponseFormat = WebMessageFormat.Json,
             RequestFormat = WebMessageFormat.Json,
-            UriTemplate = "/ScanDocument?fileid={fileid}"), CorsEnabled]
-        string ScanDocument(String fileid);
+            UriTemplate = "/ScanDocument?fileid={fileid}&path={path}"), CorsEnabled]
+        string ScanDocument(String fileid, string path);
 
         [OperationContract]
         [WebGet(ResponseFormat = WebMessageFormat.Json,
             RequestFormat = WebMessageFormat.Json,
-            UriTemplate = "/RetrieveScannedDoc?fileid={fileid}"), CorsEnabled]
-        string RetrieveScannedDoc(string fileid);
+            UriTemplate = "/RetrieveScannedDoc?fileid={fileid}&path={path}"), CorsEnabled]
+        string RetrieveScannedDoc(string fileid, string path);
 
         [OperationContract]
         [WebGet(ResponseFormat = WebMessageFormat.Json,
@@ -210,21 +210,22 @@ namespace ServiceConsole
         }
 
         
-        public string PostPdfCopies(Pdf data, int copies, string prtName)
+        public string PostPdfCopies(Pdf data, string id, int copies, string prtName)
         {
             var myPdf = JsonConvert.SerializeObject(data);
             var base64 = data.Base64;
 
-            p = new Printer(base64.ToString(), "0", copies, prtName);
-            return base64.ToString();
+            p = new Printer(base64.ToString(), id, copies, prtName);
+            return base64.ToString() + "\n" +
+                   "printerName=[" + Printer.printerName + "]\n";
         }
 
-        public string PDFtoLabelPrinter(Pdf data, string prtName, string prtType)
+        public string PDFtoLabelPrinter(Pdf data, string id, string prtName, string prtType)
         {
             var myPdf = JsonConvert.SerializeObject(data);
             var base64 = data.Base64;
 
-            p = new Printer(base64.ToString(), "0", 1, prtName, prtType); //default copies=1
+            p = new Printer(base64.ToString(), id, 1, prtName, prtType); //default copies=1
             return base64.ToString() + "\n" +
                     "printerName=["+ Printer.printerName + "]\n"+
                     "printerType=["+ Printer.printerType + "]\n";
@@ -238,11 +239,10 @@ namespace ServiceConsole
                 Byte[] bytes = Convert.FromBase64String(Printer.pdfBase64);
                 string filename = Printer.fileid + ".pdf";
                 string src_path = drive + ":\\" + path;
-                Printer.srcPath = src_path;
-                File.WriteAllBytes(src_path + "\\"+filename, bytes);
+                File.WriteAllBytes(src_path + "\\tmp\\"+filename, bytes);
 
                 PrinterSettings settings = new PrinterSettings();
-                result += "\nPrinter Name:[" +settings.PrinterName + "]";
+                result += "\nDefault Printer Name:[" +settings.PrinterName + "]";
 
                 string param = "";
                
@@ -250,6 +250,7 @@ namespace ServiceConsole
                 {
                     param = progName + " " +
                             src_path + " " +
+                            Printer.fileid + " " +
                             Printer.numOfCopies + "x" + " " +
                             Printer.printerType + " " + 
                             Printer.printerName;
@@ -260,8 +261,9 @@ namespace ServiceConsole
                             src_path + " 1x";
                 }
                 result += "\nSrc Path:[" + src_path + "]";
+                result += "\nFile ID:[" + Printer.fileid + "]";
                 result += "\nNo. of Copies:[" +Printer.numOfCopies + "]";
-                result += "\nPrinter Name:[" + Printer.printerName + "]";
+                result += "\nPrinter Name Select:[" + Printer.printerName + "]";
                 result += "\nPrinter Type:[" + Printer.printerType + "]";
                 result += "\nStatus:[Success]";
 
@@ -303,7 +305,7 @@ namespace ServiceConsole
             return result; 
         }
 
-        public string ScanDocument(string fileid) {
+        public string ScanDocument(string fileid, string path) {
 
             device = null;
             string result = "";
@@ -325,22 +327,21 @@ namespace ServiceConsole
                 device = new Scanner(deviceManager.DeviceInfos[i]);
                
             }
-
-            string filename = "";
-            if(device != null)
+            
+            string tmp_path = "";
+            if (device != null)
             {
                 ImageFile image = new ImageFile();
                 string imgExtension = "";
 
                 image = device.ScanJPEG();
                 imgExtension = ".jpeg";
+                
+                tmp_path = path + "\\tmp\\" + fileid + imgExtension;
 
-                filename = fileid + imgExtension;
-                string src_path = "";
-                src_path = Printer.srcPath;
                 // Saving image name
-                image.SaveFile(filename);
-
+                image.SaveFile(tmp_path);
+                
                 //byte[] byteImg = (byte[])image.FileData.get_BinaryData();      
 
                 //string Base64Img = Convert.ToBase64String(byteImg);
@@ -349,35 +350,43 @@ namespace ServiceConsole
                 PdfPage page = doc.AddPage();
                 XGraphics gfx = XGraphics.FromPdfPage(page);
 
-                XImage img = XImage.FromFile(filename);
+                XImage img = XImage.FromFile(tmp_path);
                 gfx.DrawImage(img, 0, 0);
-                Scanner.fileID = fileid;
-                doc.Save(fileid + ".pdf");
+                tmp_path = "";
+                tmp_path = path + "\\tmp\\" + fileid + ".pdf";
+                doc.Save(tmp_path);
                 doc.Close();
                 
                 //result += Base64Img;
 
             }
             
-            return result += "Scanned document created ["+filename+"]";
+            return result += "Scanned document created ["+tmp_path+"]";
         }
         
-        public string RetrieveScannedDoc(string fileid)
+       
+        public string RetrieveScannedDoc(string fileid, string path)
         {
-            string src_path = Printer.srcPath;
-            byte[] file = File.ReadAllBytes(fileid+".pdf");
-            string scannedDoc = Convert.ToBase64String(file);
-            //device.setImgBase64(scannedDoc);
+            string tmp = path + "\\tmp\\" + fileid + ".pdf";
+            string output = "";
 
-            string result = "";
-            if (scannedDoc != "")
+            if (File.Exists(tmp))
             {
-                result = "{'Fileid': " + "'" + fileid + "',";
-                result += "'Base64':'";
+                byte[] file = File.ReadAllBytes(tmp);
+                string scannedDoc = Convert.ToBase64String(file);
 
-                result += scannedDoc + "'}";
+
+                Product product = new Product();
+
+                product.fileID = fileid;
+                product.scannedDoc = scannedDoc;
+
+                output += "\npro.fileid=[" + product.fileID + "]";
+                output += "\npro.ScannedDoc=[" + product.scannedDoc + "]";
+                
+                output = JsonConvert.SerializeObject(product);
             }
-            return result;
+            return output;
         }
 
         public string ListPrinter()

@@ -16,7 +16,6 @@ namespace ServiceConsole
         public static int numOfCopies;
         public static string printerName;
         public static string printerType;
-        public static string srcPath;
 
         public Printer() { }
 

@@ -18,16 +18,16 @@ function PostPdf() {
 	console.log(pdfData);
 	 $.ajax({
         type: "POST",
-        //url: "http://localhost:8000/PostPdfCopies?numOfCopies=1&printerName='ZebraGT800'",
-		url: "http://localhost:8000/PDFtoLabelPrinter?printerName=ZebraGT800&printerType=LBL",
+        url: "http://localhost:8000/PostPdfCopies/123?numOfCopies=1&printerName=ZebraGT800",
+		//url: "http://localhost:8000/PDFtoLabelPrinter/23?printerName=ZebraGT800&printerType=LBL",
         data: JSON.stringify(pdfData),
 		contentType: "application/json; charset=utf-8",
         processData: true,
         
         success: function (output) {
 			console.log(output);
-			//$('#response').html(output.PostPdfCopiesResult);
-			$('#response').html(output.PDFtoLabelPrinterResult);
+			$('#response').html(output.PostPdfCopiesResult);
+			//$('#response').html(output.PDFtoLabelPrinterResult);
 		/*	var obj = JSON.parse(output.PrintPdfResult);
 			console.log(obj);
             //alert("success..." + data);

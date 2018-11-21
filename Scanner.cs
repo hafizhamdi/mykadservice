@@ -16,8 +16,6 @@ namespace ServiceConsole
         private int width_pixel = 1250;
         private int height_pixel = 1700;
         private int color_mode = 1;
-        public static string fileID;
-        public static string ImgScannedBase64;
 
         public Scanner(DeviceInfo deviceInfo)
         {
@@ -238,11 +236,7 @@ namespace ServiceConsole
         {
             return (string) this._deviceInfo.Properties["Name"].get_Value();
         }
-
-        public void setImgBase64(string str)
-        {
-            ImgScannedBase64 = str;
-        }
          
     }
+
 }
