@@ -53,6 +53,7 @@ Source: "E:\github\mykadservice\bin\Installer\PdfSharp.Charting.dll"; DestDir: "
 Source: "E:\github\mykadservice\bin\Installer\PdfSharp.Charting.xml"; DestDir: "{app}"; Flags: ignoreversion
 Source: "E:\github\mykadservice\bin\Installer\PdfSharp.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "E:\github\mykadservice\bin\Installer\PdfSharp.xml"; DestDir: "{app}"; Flags: ignoreversion
+Source: "E:\github\mykadservice\bin\Installer\PDF-XChange Viewer Settings.dat"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Dirs]

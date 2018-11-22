@@ -10,31 +10,32 @@ rem     printerName - printer name
 
 rem executable path
 set currentPath=%1
-echo %currentPath%,"Done" >> %currentPath%\\tmp\\log.txt
+echo [%date%,%time%] %currentPath%...Done >> %currentPath%\\tmp\\log.txt
 
 set fileid=%2
-echo %fileid%,"Done" >> %fileid%\\tmp\\log.txt
+echo [%date%,%time%] %fileid%...Done >> %fileid%\\tmp\\log.txt
 
 rem Set default to 1
 set noOfCopies=%3
 if %noOfCopies%=="" set noOfCopies="1x"
-echo %noOfCopies%,"Done" >> %currentPath%\\tmp\\log.txt
+echo [%date%,%time%] %noOfCopies%...Done >> %currentPath%\\tmp\\log.txt
 
 rem type can be "LBL" or "NORMAL"
 set printerType=%4
-echo %printerType%,"Done" >> %currentPath%\\tmp\\log.txt
+echo [%date%,%time%] %printerType%...Done >> %currentPath%\\tmp\\log.txt
 
 rem Get Printer name
 set printerName=%5
-echo %printerName%,"Done" >> %currentPath%\\tmp\\log.txt
+echo [%date%,%time%] %printerName%...Done >> %currentPath%\\tmp\\log.txt
 
 rem %currentPath%\PDFtoPrinter.exe %currentPath%\0.pdf
 if %printerType%==LBL (
-	%currentPath%\PDFtoPrinter.exe %currentPath%\\tmp\\%fileid%.pdf %printerName% 
-) else (%currentPath%\SumatraPDF.exe -print-to %printerName% -print-settings %noOfCopies% %currentPath%\\tmp\\0.pdf)
+	%currentPath%\PDFtoPrinter.exe %currentPath%\\tmp\\%fileid%.pdf %printerName%
+) else (
+	%currentPath%\SumatraPDF.exe -print-to %printerName% -print-settings %noOfCopies% %currentPath%\\tmp\\0.pdf)
 
 
-echo %noOfCopies% >> %currentPath%\\tmp\\log.txt
+echo [%date%,%time%] COPIES:%noOfCopies% >> %currentPath%\\tmp\\log.txt
 rem Start printing on default printer
 rem C:\htecwinsvc\PDFtoPrinter.exe "C:\htecwinsvc\pg101.pdf"
 rem %currentPath%\SumatraPDF.exe -print-to "SHARP MX-M264NV PCL6" -print-settings %noOfCopies% %currentPath%"\0.pdf"
