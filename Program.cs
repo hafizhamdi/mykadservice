@@ -7,15 +7,12 @@ using Newtonsoft.Json;
 using System.ComponentModel;
 using System.ServiceProcess;
 using System.Configuration.Install;
-using System.Runtime.Serialization;
 using System.IO;
 using System.Diagnostics;
 using System.Drawing.Printing;
-using System.Windows.Forms;
-using WIA;
-using PdfSharp;
 using PdfSharp.Pdf;
 using PdfSharp.Drawing;
+using WIA;
 
 
 /*  Author: hafizh
@@ -121,7 +118,7 @@ namespace ServiceConsole
     
     public class Service : IService
     {
-        Printer p;
+        private static Printer p1, p2, p3, myPrinter, globalPrinter;
         Scanner device;
 
         public string Hello()
@@ -204,8 +201,9 @@ namespace ServiceConsole
         {
             var myPdf = JsonConvert.SerializeObject(data);
             var base64 = data.Base64;
-          
-            p = new Printer(base64.ToString(), id);
+            globalPrinter = null; 
+            p1 = new Printer(base64.ToString(), id);
+            globalPrinter = p1;
             return base64.ToString();
         }
 
@@ -214,30 +212,36 @@ namespace ServiceConsole
         {
             var myPdf = JsonConvert.SerializeObject(data);
             var base64 = data.Base64;
-
-            p = new Printer(base64.ToString(), id, copies, prtName);
+            globalPrinter = null;
+            p2 = new Printer(base64.ToString(), id, copies, prtName);
+            globalPrinter = p2;
             return base64.ToString() + "\n" +
-                   "printerName=[" + Printer.printerName + "]\n";
+                   "printerName=[" + p2.printerName + "]\n";
         }
 
         public string PDFtoLabelPrinter(Pdf data, string id, string prtName, string prtType)
         {
             var myPdf = JsonConvert.SerializeObject(data);
             var base64 = data.Base64;
+            globalPrinter = null;
+            p3 = new Printer(base64.ToString(), id, 1, prtName, prtType); //default copies=1
 
-            p = new Printer(base64.ToString(), id, 1, prtName, prtType); //default copies=1
+            globalPrinter = p3;
             return base64.ToString() + "\n" +
-                    "printerName=["+ Printer.printerName + "]\n"+
-                    "printerType=["+ Printer.printerType + "]\n";
+                    "printerName=["+ p3.printerName + "]\n"+
+                    "printerType=["+ p3.printerType + "]\n";
         }
 
         public string ExecPrint(string drive, string path, string progName) {
             string result = "";
+
+            myPrinter = null;
+            myPrinter = globalPrinter;
            
-            if (Printer.pdfBase64 != "")
+            if (globalPrinter.pdfBase64 != "")
             {
-                Byte[] bytes = Convert.FromBase64String(Printer.pdfBase64);
-                string filename = Printer.fileid + ".pdf";
+                Byte[] bytes = Convert.FromBase64String(globalPrinter.pdfBase64);
+                string filename = globalPrinter.fileid + ".pdf";
                 string src_path = drive + ":\\" + path;
                 File.WriteAllBytes(src_path + "\\tmp\\"+filename, bytes);
 
@@ -246,14 +250,14 @@ namespace ServiceConsole
 
                 string param = "";
                
-                if (Printer.numOfCopies != 0)
+                if (globalPrinter.numOfCopies != 0)
                 {
                     param = progName + " " +
                             src_path + " " +
-                            Printer.fileid + " " +
-                            Printer.numOfCopies + "x" + " " +
-                            Printer.printerType + " " + 
-                            Printer.printerName;
+                            globalPrinter.fileid + " " +
+                            globalPrinter.numOfCopies + "x" + " " +
+                            globalPrinter.printerType + " " +
+                            globalPrinter.printerName;
                 }
                 else
                 {
@@ -261,10 +265,10 @@ namespace ServiceConsole
                             src_path + " 1x";
                 }
                 result += "\nSrc Path:[" + src_path + "]";
-                result += "\nFile ID:[" + Printer.fileid + "]";
-                result += "\nNo. of Copies:[" +Printer.numOfCopies + "]";
-                result += "\nPrinter Name Select:[" + Printer.printerName + "]";
-                result += "\nPrinter Type:[" + Printer.printerType + "]";
+                result += "\nFile ID:[" + globalPrinter.fileid + "]";
+                result += "\nNo. of Copies:[" + globalPrinter.numOfCopies + "]";
+                result += "\nPrinter Name Select:[" + globalPrinter.printerName + "]";
+                result += "\nPrinter Type:[" + globalPrinter.printerType + "]";
                 result += "\nStatus:[Success]";
 
                 Process process = new Process();

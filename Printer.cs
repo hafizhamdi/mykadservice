@@ -6,16 +6,17 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using WIA;
 
 namespace ServiceConsole
 {
     class Printer
     {
-        public static string pdfBase64;
-        public static string fileid;
-        public static int numOfCopies;
-        public static string printerName;
-        public static string printerType;
+        public string pdfBase64;
+        public string fileid;
+        public int numOfCopies;
+        public string printerName;
+        public string printerType;
 
         public Printer() { }
 
@@ -23,6 +24,9 @@ namespace ServiceConsole
         {
             pdfBase64 = base64;
             fileid = id;
+            numOfCopies = 1;
+            printerName = "";
+            printerType = "NORMAL";
         }
         
         public Printer(string base64, string id, int copies, string prtName)
@@ -31,6 +35,7 @@ namespace ServiceConsole
             fileid = id;
             numOfCopies = copies;
             printerName = prtName;
+            printerType = "NORMAL";
         }
 
         public Printer(string base64, string id, int copies, string prtName, string prtType)
