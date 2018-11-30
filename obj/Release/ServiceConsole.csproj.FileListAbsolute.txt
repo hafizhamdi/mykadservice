@@ -19,7 +19,6 @@ E:\github\mykadservice\bin\Release\PdfSharp.Charting.xml
 E:\github\mykadservice\bin\Release\de\PdfSharp.resources.dll
 E:\github\mykadservice\bin\Release\de\PdfSharp.Charting.resources.dll
 E:\github\mykadservice\bin\Release\Interop.WIA.dll
-E:\github\mykadservice\obj\Release\ServiceConsole.csprojAssemblyReference.cache
 E:\github\mykadservice\obj\Release\Interop.WIA.dll
 E:\github\mykadservice\obj\Release\ServiceConsole.csproj.ResolveComReference.cache
 E:\github\mykadservice\obj\Release\ServiceConsole.csproj.CoreCompileInputs.cache

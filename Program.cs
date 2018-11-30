@@ -13,6 +13,7 @@ using System.Drawing.Printing;
 using PdfSharp.Pdf;
 using PdfSharp.Drawing;
 using WIA;
+using PdfSharp.Pdf.IO;
 
 
 /*  Author: hafizh
@@ -112,6 +113,19 @@ namespace ServiceConsole
             RequestFormat = WebMessageFormat.Json,
             UriTemplate = "/ListPrinter"), CorsEnabled]
         string ListPrinter();
+
+        [OperationContract]
+        [WebGet(ResponseFormat = WebMessageFormat.Json,
+            RequestFormat = WebMessageFormat.Json,
+            UriTemplate = "/MergePDFs/{id}?targetPath={targetPath}"), CorsEnabled]
+        string MergePDFs(string id, string targetPath);
+
+
+        [OperationContract]
+        [WebGet(ResponseFormat = WebMessageFormat.Json,
+            RequestFormat = WebMessageFormat.Json,
+            UriTemplate = "/DeletePDF/{id}?targetPath={targetPath}"), CorsEnabled]
+        string DeletePDF(string id, string targetPath);
 
     }
 
@@ -409,6 +423,100 @@ namespace ServiceConsole
             return result;
         }
 
+        public string MergePDFs(string id, string targetPath)
+        {
+            string param = "";
+            param = String.Format("mergePdfs.bat {0} {1}", targetPath, id);
+
+            try
+            {
+                Process process = new Process();
+                process.StartInfo.FileName = "cmd.exe";
+                process.StartInfo.Arguments = @"/c " + targetPath + "\\" + param;
+
+                process.StartInfo.UseShellExecute = false;
+                process.StartInfo.RedirectStandardOutput = false;
+                process.StartInfo.RedirectStandardError = false;
+                process.Start();
+
+                process.WaitForExit();
+
+                process.Close();
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+
+            return "Combine PDFs Completed.";
+        }
+
+        public string DeletePDF(string id, string targetPath)
+        {
+            string source = "NULL";
+            try
+            {
+                source = String.Format("{0}\\tmp\\{1}.pdf", targetPath, id);
+                if (File.Exists(source) == true)
+                {
+                    string param = "";
+                    param = String.Format(@"DEL /F /Q /A {0}", source);
+
+
+                    Process process = new Process();
+                    process.StartInfo.FileName = "cmd.exe";
+                    process.StartInfo.Arguments = @"/c " + param;
+
+                    process.StartInfo.UseShellExecute = false;
+                    process.StartInfo.RedirectStandardOutput = false;
+                    process.StartInfo.RedirectStandardError = false;
+                    process.Start();
+
+                    process.WaitForExit();
+
+                    process.Close();
+                }
+            }
+            catch (IOException ioex)
+            {
+                Console.WriteLine(ioex.Message);
+            }
+
+            return String.Format("PDF [{0}] deleted.", source);
+        }
+
+        public static void ClearTemp(string targetPath)
+        {
+            try
+            {
+                if (Directory.Exists(targetPath) == true)
+                {
+                    string param = "";
+                    param = String.Format(@"DEL /F /Q /A {0}\\*", targetPath);
+
+
+                    Process process = new Process();
+                    process.StartInfo.FileName = "cmd.exe";
+                    process.StartInfo.Arguments = @"/c " + param;
+
+                    process.StartInfo.UseShellExecute = false;
+                    process.StartInfo.RedirectStandardOutput = false;
+                    process.StartInfo.RedirectStandardError = false;
+                    process.Start();
+
+                    process.WaitForExit();
+
+                    process.Close();
+                }
+            }
+            catch (IOException ioex)
+            {
+                Console.WriteLine(ioex.Message);
+            }
+           
+            
+        }
+
         public class WindowsService : ServiceBase
         {
             public ServiceHost serviceHost = null;
@@ -440,19 +548,13 @@ namespace ServiceConsole
                         cf.Endpoint.Behaviors.Add(new WebHttpBehavior());
 
                         IService channel = cf.CreateChannel();
-
-
+                        
                         string s;
-
-                        Console.WriteLine("Calling Hello via HTTP GET: ");
+                        //Test
                         s = channel.Hello();
-                        Console.WriteLine("   Output: {0}", s);
-
-                        Console.WriteLine("");
-                        Console.WriteLine("This can also be accomplished by navigating to");
-                        Console.WriteLine("http://localhost:8000/Hello");
-                        Console.WriteLine("in a web browser while this service is running.");
-                        Console.WriteLine("");
+                        
+                        //Clear anything inside tmp folder
+                        ClearTemp("C:\\HISHTPService\\tmp");
                     }
                     
                 }
