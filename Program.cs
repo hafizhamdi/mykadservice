@@ -24,6 +24,7 @@ using WIA;
  *  iii - ver 2.1 : (13-Mar-18) Add hostname 
  *  iv  - ver 2.2&2.3 : (29-Mar-18) Add printer
  *  v   - ver 2.4 : (07-Nov-18) Add Printer name and set environment
+ *  vi   -ver 2.4.5 : Working as UAT on 30-Nov-18
  *  
      */
 
@@ -73,8 +74,8 @@ namespace ServiceConsole
             BodyStyle = WebMessageBodyStyle.WrappedResponse,
             //RequestFormat = WebMessageFormat.Json,
             ResponseFormat = WebMessageFormat.Json,
-            UriTemplate = "/PDFtoLabelPrinter/{id}?printerName={prtName}&printerType={prtType}"), CorsEnabled]
-        string PDFtoLabelPrinter(Pdf data, string id, string prtName, string prtType);
+            UriTemplate = "/PDFtoLabelPrinter/{id}?numOfCopies={copies}&printerName={prtName}&printerType={prtType}"), CorsEnabled]
+        string PDFtoLabelPrinter(Pdf data, string id, int copies,string prtName, string prtType);
 
         [OperationContract]
         [WebGet(ResponseFormat = WebMessageFormat.Json,
@@ -118,7 +119,7 @@ namespace ServiceConsole
     
     public class Service : IService
     {
-        private static Printer p1, p2, p3, myPrinter, globalPrinter;
+        Printer myPrinter;
         Scanner device;
 
         public string Hello()
@@ -201,9 +202,8 @@ namespace ServiceConsole
         {
             var myPdf = JsonConvert.SerializeObject(data);
             var base64 = data.Base64;
-            globalPrinter = null; 
-            p1 = new Printer(base64.ToString(), id);
-            globalPrinter = p1;
+            myPrinter = null; 
+            myPrinter = new Printer(base64.ToString(), id);
             return base64.ToString();
         }
 
@@ -212,76 +212,76 @@ namespace ServiceConsole
         {
             var myPdf = JsonConvert.SerializeObject(data);
             var base64 = data.Base64;
-            globalPrinter = null;
-            p2 = new Printer(base64.ToString(), id, copies, prtName);
-            globalPrinter = p2;
-            return base64.ToString() + "\n" +
-                   "printerName=[" + p2.printerName + "]\n";
+            myPrinter = null;
+            myPrinter = new Printer(base64.ToString(), id, copies, prtName, "NORMAL");
+            return base64.ToString(); ;
         }
 
-        public string PDFtoLabelPrinter(Pdf data, string id, string prtName, string prtType)
+        public string PDFtoLabelPrinter(Pdf data, string id, int copies,string prtName, string prtType)
         {
             var myPdf = JsonConvert.SerializeObject(data);
             var base64 = data.Base64;
-            globalPrinter = null;
-            p3 = new Printer(base64.ToString(), id, 1, prtName, prtType); //default copies=1
+            myPrinter = null;
+            myPrinter = new Printer(base64.ToString(), id, copies, prtName, prtType); //default copies=1
 
-            globalPrinter = p3;
-            return base64.ToString() + "\n" +
-                    "printerName=["+ p3.printerName + "]\n"+
-                    "printerType=["+ p3.printerType + "]\n";
+            return base64.ToString();
         }
 
         public string ExecPrint(string drive, string path, string progName) {
             string result = "";
-
-            myPrinter = null;
-            myPrinter = globalPrinter;
-           
-            if (globalPrinter.pdfBase64 != "")
+            
+            if (Printer.pdfBase64 != "")
             {
-                Byte[] bytes = Convert.FromBase64String(globalPrinter.pdfBase64);
-                string filename = globalPrinter.fileid + ".pdf";
+                Byte[] bytes = Convert.FromBase64String(Printer.pdfBase64);
+                string filename = Printer.fileid + ".pdf";
                 string src_path = drive + ":\\" + path;
                 File.WriteAllBytes(src_path + "\\tmp\\"+filename, bytes);
 
-                PrinterSettings settings = new PrinterSettings();
-                result += "\nDefault Printer Name:[" +settings.PrinterName + "]";
+                //PrinterSettings settings = new PrinterSettings();
+                //result += "\nDefault Printer Name:[" +settings.PrinterName + "]";
 
                 string param = "";
                
-                if (globalPrinter.numOfCopies != 0)
+                if (Printer.numOfCopies != 0)
                 {
                     param = progName + " " +
                             src_path + " " +
-                            globalPrinter.fileid + " " +
-                            globalPrinter.numOfCopies + "x" + " " +
-                            globalPrinter.printerType + " " +
-                            globalPrinter.printerName;
+                            Printer.fileid + " " +
+                            Printer.numOfCopies + "x" + " " +
+                            Printer.printerType + " " +
+                            Printer.printerName;
                 }
                 else
                 {
                     param = progName + " " +
                             src_path + " 1x";
                 }
-                result += "\nSrc Path:[" + src_path + "]";
-                result += "\nFile ID:[" + globalPrinter.fileid + "]";
-                result += "\nNo. of Copies:[" + globalPrinter.numOfCopies + "]";
-                result += "\nPrinter Name Select:[" + globalPrinter.printerName + "]";
-                result += "\nPrinter Type:[" + globalPrinter.printerType + "]";
+                result += String.Format("\nSrc Path:[{0}]",src_path);
+                result += String.Format("\nFile ID:[{0}]",Printer.fileid);
+                result += String.Format("\nNo. of Copies:[{0}]",Printer.numOfCopies);
+                result += String.Format("\nPrinter Name Select:[{0}]", Printer.printerName);
+                result += String.Format("\nPrinter Type:[{0}]",Printer.printerType);
                 result += "\nStatus:[Success]";
+             
+                try
+                {
+                    Process process = new Process();
+                    process.StartInfo.FileName = "cmd.exe";
+                    process.StartInfo.Arguments = @"/c " + src_path + "\\" + param;
+                    
+                    process.StartInfo.UseShellExecute = false;
+                    process.StartInfo.RedirectStandardOutput = false;
+                    process.StartInfo.RedirectStandardError = false;
+                    process.Start();
 
-                Process process = new Process();
-                process.StartInfo.FileName = "cmd.exe";
-                process.StartInfo.Arguments = @"/c " + src_path + "\\" + param;
-                process.StartInfo.UseShellExecute = false;
-                process.StartInfo.RedirectStandardOutput = false;
-                process.StartInfo.RedirectStandardError = false;
-                process.Start();
-                process.WaitForExit();
-
-                process.Close();
-
+                    process.WaitForExit();
+                    
+                    process.Close();
+                }
+                catch (Exception e)
+                {
+                    return e.Message;
+                }
             }
 
             return result;          
@@ -346,10 +346,6 @@ namespace ServiceConsole
                 // Saving image name
                 image.SaveFile(tmp_path);
                 
-                //byte[] byteImg = (byte[])image.FileData.get_BinaryData();      
-
-                //string Base64Img = Convert.ToBase64String(byteImg);
-
                 PdfDocument doc = new PdfDocument();
                 PdfPage page = doc.AddPage();
                 XGraphics gfx = XGraphics.FromPdfPage(page);
@@ -385,8 +381,8 @@ namespace ServiceConsole
                 product.fileID = fileid;
                 product.scannedDoc = scannedDoc;
 
-                output += "\npro.fileid=[" + product.fileID + "]";
-                output += "\npro.ScannedDoc=[" + product.scannedDoc + "]";
+                //output += "\npro.fileid=[" + product.fileID + "]";
+                //output += "\npro.ScannedDoc=[" + product.scannedDoc + "]";
                 
                 output = JsonConvert.SerializeObject(product);
             }

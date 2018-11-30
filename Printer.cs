@@ -12,11 +12,11 @@ namespace ServiceConsole
 {
     class Printer
     {
-        public string pdfBase64;
-        public string fileid;
-        public int numOfCopies;
-        public string printerName;
-        public string printerType;
+        public static string pdfBase64;
+        public static string fileid;
+        public static int numOfCopies;
+        public static string printerName;
+        public static string printerType;
 
         public Printer() { }
 

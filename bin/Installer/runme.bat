@@ -7,7 +7,7 @@ rem 	fileid 		- file id
 rem 	noOfCopies  - print copies
 rem     printerType - LBL or NORMAL
 rem     printerName - printer name  
-rem setlocal EnableDelayedExpansion
+setlocal EnableDelayedExpansion
 set DONE=0
 
 rem executable path
@@ -31,15 +31,16 @@ set printerName=%5
 echo [%date%,%time%] Printer Name:%printerName% >> %currentPath%\\tmp\\log.txt
 
 if %printerType%==LBL (
-	for /f "usebackq skip=1 tokens=*" %%a in (`wmic printer where "name like '%%LABEL%%'" get name ^| findstr /r /v "^$"`
-	) do set myprinter=%%a
-	%currentPath%\\PDFtoPrinter.exe %currentPath%\\tmp\\%fileid%.pdf %myprinter%
 	
-	echo [%date%,%time%] Shared Printer Name:%myprinter% >> %currentPath%\\tmp\\log.txt
-
+	FOR /L %%b IN (1,1,%noOfCopies%) DO (
+		%currentPath%\\PDFtoPrinter.exe "%currentPath%\\tmp\\%fileid%.pdf" "%printerName%"
+	)
 	set DONE=1
 ) else (
-	%currentPath%\\SumatraPDF.exe -print-to "%printerName%" -print-settings "%noOfCopies%x" %currentPath%\\tmp\\%fileid%.pdf -exit-on-print
+	
+	FOR /L %%b IN (1,1,%noOfCopies%) DO (
+		C:\\Windows\\System32\\LPR.exe -S 10.0.1.228 -P RAW "%currentPath%\\tmp\\%fileid%.pdf"
+	)
 	set DONE=1)
 
 if %DONE%==1 (
@@ -47,4 +48,3 @@ if %DONE%==1 (
 )
 
 echo ----------------------------------------------------------- >> %currentPath%\\tmp\\log.txt
-rem endlocal
