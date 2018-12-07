@@ -14,6 +14,7 @@ using PdfSharp.Pdf;
 using PdfSharp.Drawing;
 using WIA;
 using PdfSharp.Pdf.IO;
+using System.Management;
 
 
 /*  Author: hafizh
@@ -25,7 +26,8 @@ using PdfSharp.Pdf.IO;
  *  iii - ver 2.1 : (13-Mar-18) Add hostname 
  *  iv  - ver 2.2&2.3 : (29-Mar-18) Add printer
  *  v   - ver 2.4 : (07-Nov-18) Add Printer name and set environment
- *  vi   -ver 2.4.5 : Working as UAT on 30-Nov-18
+ *  vi  - ver 2.4.5 : Working as UAT on 30-Nov-18
+ *  vii - ver 2.4.7 : Add new API for pdf combine  
  *  
      */
 
@@ -248,8 +250,9 @@ namespace ServiceConsole
             {
                 Byte[] bytes = Convert.FromBase64String(Printer.pdfBase64);
                 string filename = Printer.fileid + ".pdf";
-                string src_path = drive + ":\\" + path;
-                File.WriteAllBytes(src_path + "\\tmp\\"+filename, bytes);
+                string srcPath = drive + ":\\" + path;
+                string binPath = drive + ":\\" + path + "\\bin";
+                File.WriteAllBytes(srcPath + "\\tmp\\"+filename, bytes);
 
                 //PrinterSettings settings = new PrinterSettings();
                 //result += "\nDefault Printer Name:[" +settings.PrinterName + "]";
@@ -259,7 +262,7 @@ namespace ServiceConsole
                 if (Printer.numOfCopies != 0)
                 {
                     param = progName + " " +
-                            src_path + " " +
+                            srcPath + " " +
                             Printer.fileid + " " +
                             Printer.numOfCopies + "x" + " " +
                             Printer.printerType + " " +
@@ -268,9 +271,9 @@ namespace ServiceConsole
                 else
                 {
                     param = progName + " " +
-                            src_path + " 1x";
+                            srcPath + " 1x";
                 }
-                result += String.Format("\nSrc Path:[{0}]",src_path);
+                result += String.Format("\nSrc Path:[{0}]", srcPath);
                 result += String.Format("\nFile ID:[{0}]",Printer.fileid);
                 result += String.Format("\nNo. of Copies:[{0}]",Printer.numOfCopies);
                 result += String.Format("\nPrinter Name Select:[{0}]", Printer.printerName);
@@ -280,8 +283,9 @@ namespace ServiceConsole
                 try
                 {
                     Process process = new Process();
-                    process.StartInfo.FileName = "cmd.exe";
-                    process.StartInfo.Arguments = @"/c " + src_path + "\\" + param;
+                    process.StartInfo.WorkingDirectory = @"C:\WINDOWS\system32";
+                    process.StartInfo.FileName = @"C:\WINDOWS\system32\cmd.exe";
+                    process.StartInfo.Arguments = @"/c " + binPath + "\\" + param;
                     
                     process.StartInfo.UseShellExecute = false;
                     process.StartInfo.RedirectStandardOutput = false;
@@ -422,7 +426,7 @@ namespace ServiceConsole
             }
             return result;
         }
-
+        
         public string MergePDFs(string id, string targetPath)
         {
             string param = "";
@@ -432,7 +436,7 @@ namespace ServiceConsole
             {
                 Process process = new Process();
                 process.StartInfo.FileName = "cmd.exe";
-                process.StartInfo.Arguments = @"/c " + targetPath + "\\" + param;
+                process.StartInfo.Arguments = @"/c " + targetPath + "\\bin\\" + param;
 
                 process.StartInfo.UseShellExecute = false;
                 process.StartInfo.RedirectStandardOutput = false;
